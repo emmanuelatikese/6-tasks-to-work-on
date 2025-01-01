@@ -5,11 +5,11 @@ class program{
     static void Main(){
         console.WriteLine("Hello, Welcome to Guess Game !!!");
         console.WriteLine("Can you guess right?");
-        console.WriteLine("You have only five tries to guess a number from 1 to 10")
+        console.WriteLine("You have only five tries to guess a number from 1 to 10");
 
 
-Random guessNum = Random(1, 10);
-        for (int i = 1; i <= 5, i++)
+        int guessNum = Random.Next(1, 10);
+        for (int i = 1; i <= 5; i++)
         {
             console.WriteLine("Your Guess(1-10):");
             string guess = console.ReadLine();
@@ -22,9 +22,9 @@ Random guessNum = Random(1, 10);
             }
             else
             {
-                if  i < 6 {
-                    console.WriteLine("you guessed wrong !!! :(", );
-                    int triesLeft = 5 - i
+                if  (i < 6 ){
+                    console.WriteLine("you guessed wrong !!! :(");
+                    int triesLeft = 5 - i;
                     if (triesLeft > 1)
                     {
                         console.WriteLine($"{triesLeft} tries left");
