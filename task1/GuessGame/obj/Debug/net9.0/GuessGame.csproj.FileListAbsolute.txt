@@ -1,0 +1,15 @@
+/mnt/c/Users/Emma/Desktop/Code tutorials/Software engineering and programming/6-tasks-to-work-on/task1/GuessGame/bin/Debug/net9.0/GuessGame
+/mnt/c/Users/Emma/Desktop/Code tutorials/Software engineering and programming/6-tasks-to-work-on/task1/GuessGame/bin/Debug/net9.0/GuessGame.deps.json
+/mnt/c/Users/Emma/Desktop/Code tutorials/Software engineering and programming/6-tasks-to-work-on/task1/GuessGame/bin/Debug/net9.0/GuessGame.runtimeconfig.json
+/mnt/c/Users/Emma/Desktop/Code tutorials/Software engineering and programming/6-tasks-to-work-on/task1/GuessGame/bin/Debug/net9.0/GuessGame.dll
+/mnt/c/Users/Emma/Desktop/Code tutorials/Software engineering and programming/6-tasks-to-work-on/task1/GuessGame/bin/Debug/net9.0/GuessGame.pdb
+/mnt/c/Users/Emma/Desktop/Code tutorials/Software engineering and programming/6-tasks-to-work-on/task1/GuessGame/obj/Debug/net9.0/GuessGame.GeneratedMSBuildEditorConfig.editorconfig
+/mnt/c/Users/Emma/Desktop/Code tutorials/Software engineering and programming/6-tasks-to-work-on/task1/GuessGame/obj/Debug/net9.0/GuessGame.AssemblyInfoInputs.cache
+/mnt/c/Users/Emma/Desktop/Code tutorials/Software engineering and programming/6-tasks-to-work-on/task1/GuessGame/obj/Debug/net9.0/GuessGame.AssemblyInfo.cs
+/mnt/c/Users/Emma/Desktop/Code tutorials/Software engineering and programming/6-tasks-to-work-on/task1/GuessGame/obj/Debug/net9.0/GuessGame.csproj.CoreCompileInputs.cache
+/mnt/c/Users/Emma/Desktop/Code tutorials/Software engineering and programming/6-tasks-to-work-on/task1/GuessGame/obj/Debug/net9.0/GuessGame.sourcelink.json
+/mnt/c/Users/Emma/Desktop/Code tutorials/Software engineering and programming/6-tasks-to-work-on/task1/GuessGame/obj/Debug/net9.0/GuessGame.dll
+/mnt/c/Users/Emma/Desktop/Code tutorials/Software engineering and programming/6-tasks-to-work-on/task1/GuessGame/obj/Debug/net9.0/refint/GuessGame.dll
+/mnt/c/Users/Emma/Desktop/Code tutorials/Software engineering and programming/6-tasks-to-work-on/task1/GuessGame/obj/Debug/net9.0/GuessGame.pdb
+/mnt/c/Users/Emma/Desktop/Code tutorials/Software engineering and programming/6-tasks-to-work-on/task1/GuessGame/obj/Debug/net9.0/GuessGame.genruntimeconfig.cache
+/mnt/c/Users/Emma/Desktop/Code tutorials/Software engineering and programming/6-tasks-to-work-on/task1/GuessGame/obj/Debug/net9.0/ref/GuessGame.dll
