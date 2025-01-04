@@ -169,7 +169,7 @@ class Program{
                         Dictionary<string, string> updateList = new Dictionary<string, string>();
                         Console.WriteLine("\n");
                         Console.WriteLine("Update a Task");
-                        Console.Write("Id: ");
+                        Console.Write("TaskId: ");
                         string updateId = Console.ReadLine();
                         Console.WriteLine("\n");
                         string titleUpdate = "", desUpdate = "", completeUpdate = "";
@@ -201,20 +201,19 @@ class Program{
                         completeUpdate = Console.ReadLine();
                         if (completeUpdate != "")
                         {
-                            string[] validStr = { "yes", "y", "n", "no" };
+                            string[] validStr = { "yes", "y", "n", "no", ""};
                             while (!(validStr.Contains(completeUpdate)))
                             {
 
 
-                                if (completeUpdate == "" || !(validStr.Contains(completeUpdate)))
+                                if (!(validStr.Contains(completeUpdate)))
                                 {
-                                    Console.WriteLine("you have to select within these options:", validStr);
-                                }
-                                else
-                                {
-                                    updateList.Add("complete", completeUpdate);
+                                    Console.WriteLine("you have to select within these options:(yes/y) / (no/ n)/ ''");
+                                    Console.Write("Complete (yes/y) / (no/ n)/ '': ");
+                                    completeUpdate = Console.ReadLine();
                                 }
                             }
+                            updateList.Add("complete", completeUpdate);
                         }
 
                         bool resUpdate = prog.UpdateOne(updateList, updateId);
@@ -231,12 +230,15 @@ class Program{
                     case 5:
                         Console.WriteLine("\n");
                         Console.WriteLine("Delete a Task");
-                        Console.WriteLine("Id: ");
+                        Console.Write("TaskId: ");
                         string delId = Console.ReadLine();
+                        Console.WriteLine("\n");
                         prog.DeleteOne(delId);
+                        Console.WriteLine("\n");
                         Console.WriteLine("Task deleted successfully");
                         userResponse = "";
                         Console.WriteLine("\n");
+                        Console.WriteLine("Welcome back !!!");
                         break;
                     case 6:
                         Console.WriteLine("\n");
@@ -252,11 +254,6 @@ class Program{
                 Console.WriteLine("\n");
             }
 
-                
-
-
-            
-            
         }
     }
 }
