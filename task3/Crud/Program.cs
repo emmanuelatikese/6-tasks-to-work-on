@@ -104,8 +104,9 @@ class Program{
             Console.Write("List of options\n1.View All Task \n2.View a Task \n3.Create Task \n4.Update a Task \n5.Delete a Task \n6.Exit\n");
             Console.Write("Enter an option(1-6):");
             userResponse = Console.ReadLine();
+            Console.WriteLine("-------------------------------------------------");
 
-                 try
+            try
                  {
                 int parseResponse = int.Parse(userResponse);
                 switch (parseResponse)
@@ -115,6 +116,7 @@ class Program{
                         Console.WriteLine("FindAll Tasks");
                         prog.FindAllTask();
                         userResponse = "";
+                        Console.WriteLine("-------------------------------------------------");
                         Console.WriteLine("\n");
                         Console.WriteLine("Welcome back !!!");
                         break;
@@ -133,6 +135,7 @@ class Program{
                             }
                         }
                         prog.FindOne(resId);
+                        Console.WriteLine("-------------------------------------------------");
                         Console.WriteLine("\n");
                         Console.WriteLine("Welcome back !!!");
                         userResponse = "";
@@ -160,6 +163,7 @@ class Program{
                         {
                             resTask.PrintValues();
                             Console.WriteLine("Task Created successfully ... ");
+                            Console.WriteLine("-------------------------------------------------");
                             userResponse = "";
                             Console.WriteLine("\n");
                             Console.WriteLine("Welcome back !!!");
@@ -220,6 +224,7 @@ class Program{
                         if (resUpdate)
                         {
                             Console.WriteLine("Update done successfully ...");
+                            Console.WriteLine("-------------------------------------------------");
                             Console.WriteLine("\n");
                             Console.WriteLine("Welcome back !!!");
                             userResponse = "";
@@ -236,6 +241,7 @@ class Program{
                         prog.DeleteOne(delId);
                         Console.WriteLine("\n");
                         Console.WriteLine("Task deleted successfully");
+                        Console.WriteLine("-------------------------------------------------");
                         userResponse = "";
                         Console.WriteLine("\n");
                         Console.WriteLine("Welcome back !!!");
