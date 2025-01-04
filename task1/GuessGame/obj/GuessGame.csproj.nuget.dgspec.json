@@ -1,26 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "/mnt/c/Users/Emma/Desktop/Code tutorials/Software engineering and programming/6-tasks-to-work-on/task1/GuessGame/GuessGame.csproj": {}
+    "C:\\Users\\Emma\\Desktop\\Code tutorials\\Software engineering and programming\\6-tasks-to-work-on\\task1\\GuessGame\\GuessGame.csproj": {}
   },
   "projects": {
-    "/mnt/c/Users/Emma/Desktop/Code tutorials/Software engineering and programming/6-tasks-to-work-on/task1/GuessGame/GuessGame.csproj": {
+    "C:\\Users\\Emma\\Desktop\\Code tutorials\\Software engineering and programming\\6-tasks-to-work-on\\task1\\GuessGame\\GuessGame.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/mnt/c/Users/Emma/Desktop/Code tutorials/Software engineering and programming/6-tasks-to-work-on/task1/GuessGame/GuessGame.csproj",
+        "projectUniqueName": "C:\\Users\\Emma\\Desktop\\Code tutorials\\Software engineering and programming\\6-tasks-to-work-on\\task1\\GuessGame\\GuessGame.csproj",
         "projectName": "GuessGame",
-        "projectPath": "/mnt/c/Users/Emma/Desktop/Code tutorials/Software engineering and programming/6-tasks-to-work-on/task1/GuessGame/GuessGame.csproj",
-        "packagesPath": "/home/atsi25/.nuget/packages/",
-        "outputPath": "/mnt/c/Users/Emma/Desktop/Code tutorials/Software engineering and programming/6-tasks-to-work-on/task1/GuessGame/obj/",
+        "projectPath": "C:\\Users\\Emma\\Desktop\\Code tutorials\\Software engineering and programming\\6-tasks-to-work-on\\task1\\GuessGame\\GuessGame.csproj",
+        "packagesPath": "C:\\Users\\Emma\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Emma\\Desktop\\Code tutorials\\Software engineering and programming\\6-tasks-to-work-on\\task1\\GuessGame\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/atsi25/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Emma\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
-          "/usr/lib/dotnet/library-packs": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -60,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/9.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

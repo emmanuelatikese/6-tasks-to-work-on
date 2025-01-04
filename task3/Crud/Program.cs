@@ -99,13 +99,14 @@ class Program{
         Program prog = new Program();
         Console.WriteLine("Welcome to Simple Task App");
         string userResponse = "";
-        while (userResponse.Contains(""))
+        while (userResponse == "")
         {
             Console.Write("List of options\n1.View All Task \n2.View a Task \n3.Create Task \n4.Update a Task \n5.Delete a Task \n6.Exit\n");
             Console.Write("Enter an option(1-6):");
             userResponse = Console.ReadLine();
 
-
+                 try
+                 {
                 int parseResponse = int.Parse(userResponse);
                 switch (parseResponse)
                 {
@@ -114,18 +115,20 @@ class Program{
                         Console.WriteLine("FindAll Tasks");
                         prog.FindAllTask();
                         userResponse = "";
-                    Console.WriteLine("\n");
-                    Console.WriteLine("Welcome back !!!");
+                        Console.WriteLine("\n");
+                        Console.WriteLine("Welcome back !!!");
                         break;
 
                     case 2:
                         Console.WriteLine("\n");
                         Console.WriteLine("Find Task");
                         string resId = "";
-                        while(resId == ""){
+                        while (resId == "")
+                        {
                             Console.Write("Enter Id of choice:");
                             resId = Console.ReadLine();
-                            if (resId == ""){
+                            if (resId == "")
+                            {
                                 Console.Write("Id can't be empty !!!");
                             }
                         }
@@ -153,9 +156,10 @@ class Program{
                         // resTask.Title = resTitle;
                         // resTask.Description = resDescription;
                         bool ans = prog.Create(resTask);
-                        if (ans){
+                        if (ans)
+                        {
                             resTask.PrintValues();
-                            Console.WriteLine("Task Created successfully");
+                            Console.WriteLine("Task Created successfully ... ");
                             userResponse = "";
                             Console.WriteLine("\n");
                             Console.WriteLine("Welcome back !!!");
@@ -165,17 +169,21 @@ class Program{
                         Dictionary<string, string> updateList = new Dictionary<string, string>();
                         Console.WriteLine("\n");
                         Console.WriteLine("Update a Task");
-                        Console.WriteLine("Id: ");
+                        Console.Write("Id: ");
                         string updateId = Console.ReadLine();
                         Console.WriteLine("\n");
                         string titleUpdate = "", desUpdate = "", completeUpdate = "";
-                        
-                        while(titleUpdate.Contains("")){
+
+                        while (titleUpdate == "")
+                        {
                             Console.Write("Title: ");
                             titleUpdate = Console.ReadLine();
-                            if (titleUpdate.Contains("")){
+                            if (titleUpdate == "")
+                            {
                                 Console.WriteLine("Title can't be empty !!!");
-                            } else {
+                            }
+                            else
+                            {
                                 updateList.Add("title", titleUpdate);
                             }
                         }
@@ -184,13 +192,15 @@ class Program{
                         Console.WriteLine("\n");
 
 
-                    if (desUpdate != ""){
+                        if (desUpdate != "")
+                        {
                             updateList.Add("description", desUpdate);
                         }
-                        
+
                         Console.Write("Complete (yes/y) / (no/ n)/ '': ");
                         completeUpdate = Console.ReadLine();
-                        if (completeUpdate != ""){
+                        if (completeUpdate != "")
+                        {
                             string[] validStr = { "yes", "y", "n", "no" };
                             while (!(validStr.Contains(completeUpdate)))
                             {
@@ -208,29 +218,41 @@ class Program{
                         }
 
                         bool resUpdate = prog.UpdateOne(updateList, updateId);
-                        if (resUpdate){
-                            Console.WriteLine("Update done successfully");
+                        if (resUpdate)
+                        {
+                            Console.WriteLine("Update done successfully ...");
+                            Console.WriteLine("\n");
                             Console.WriteLine("Welcome back !!!");
                             userResponse = "";
                         }
-                    Console.WriteLine("\n");
-                    break;
+                        Console.WriteLine("\n");
+                        break;
 
                     case 5:
-                    Console.WriteLine("\n");
-                    Console.WriteLine("Delete a Task");
+                        Console.WriteLine("\n");
+                        Console.WriteLine("Delete a Task");
                         Console.WriteLine("Id: ");
                         string delId = Console.ReadLine();
                         prog.DeleteOne(delId);
                         Console.WriteLine("Task deleted successfully");
                         userResponse = "";
-                    Console.WriteLine("\n");
-                    break;
+                        Console.WriteLine("\n");
+                        break;
                     case 6:
-                    Console.WriteLine("\n");
-                    Console.WriteLine("Bye !!!");
+                        Console.WriteLine("\n");
+                        Console.WriteLine("Bye !!!");
                         break;
                 }
+            }
+            catch (FormatException ex)
+            {
+                userResponse = "";
+                Console.WriteLine("\n");
+                Console.WriteLine($"You have to type from (1 - 10) to choose from these options !!!");
+                Console.WriteLine("\n");
+            }
+
+                
 
 
             
