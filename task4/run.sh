@@ -1,0 +1,2 @@
+javac TempConverter.java
+java TempConverter
