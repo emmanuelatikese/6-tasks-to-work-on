@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "CzMxW0zO6I8=",
+  "dgSpecHash": "r2PsIG7oaso=",
   "success": true,
-  "projectFilePath": "/mnt/c/Users/Emma/Desktop/Code tutorials/Software engineering and programming/6-tasks-to-work-on/task3/Crud/Crud.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/mnt/c/Users/Emma/Desktop/Code tutorials/Software engineering and programming/6-tasks-to-work-on/task5/Crud/Crud.csproj",
+  "expectedPackageFiles": [
+    "/home/atsi25/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

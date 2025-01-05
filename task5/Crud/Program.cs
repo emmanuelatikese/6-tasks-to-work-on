@@ -1,13 +1,40 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.IO;
+using Newtonsoft.Json;
 using Task;
 
 class Program{
     private Dictionary<string, TaskData> TaskList = new Dictionary<string, TaskData>();
 
+    public void WriteJson(Dictionary<string, TaskData> Data)
+    {
+        string strJson = JsonConvert.SerializeObject(Data, Formatting.Indented);
+        File.WriteAllText("storage.json", strJson);
+    }
+
+    public Dictionary<string, TaskData> ReadJson(Dictionary<string, TaskData> Data)
+    {
+        string strJson = File.ReadAllText("storage.json");
+        var dict = JsonConvert.DeserializeObject<Dictionary<string, TaskData>>(strJson);
+        return dict;
+    }
+
+     Program()
+    {
+        if (File.Exists("storage.json")){
+            TaskList = ReadJson(TaskList);
+        }
+        else
+        {
+            WriteJson(TaskList);
+        }
+    }
     public bool Create(TaskData Data){
         try {
             Guid uuid = Guid.NewGuid();
             TaskList.Add(uuid.ToString(), Data);
+            WriteJson(TaskList);
             return true;
         }
         catch (Exception ex){
@@ -33,6 +60,7 @@ class Program{
                     task.Complete = false;
                 }
             }
+            WriteJson(TaskList);
             return true;
         }
         else
@@ -54,6 +82,7 @@ class Program{
                 {
                     Console.WriteLine("Task don't exist");
                 }
+                WriteJson(TaskList);
             }
             else{
                 Console.WriteLine("No Task available");
