@@ -97,6 +97,7 @@ class Program{
     }
     static void Main(){
         Program prog = new Program();
+        
         Console.WriteLine("Welcome to Simple Task App");
         string userResponse = "";
         while (userResponse == "")
