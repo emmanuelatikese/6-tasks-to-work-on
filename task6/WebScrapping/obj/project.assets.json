@@ -1,11 +1,77 @@
 {
   "version": 3,
   "targets": {
-    "net9.0": {}
+    "net9.0": {
+      "HtmlAgilityPack/1.11.72": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/HtmlAgilityPack.dll": {
+            "related": ".deps.json;.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/HtmlAgilityPack.dll": {
+            "related": ".deps.json;.pdb;.xml"
+          }
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "HtmlAgilityPack/1.11.72": {
+      "sha512": "RNLgXxTFdIGFI+o5l8c2aJ2L5StIRn9Uv8HKR76p7QP4ZUL26wzpWUCWh08xWUdkL2kocl+Xhv6VUu0rA1npVg==",
+      "type": "package",
+      "path": "htmlagilitypack/1.11.72",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "htmlagilitypack.1.11.72.nupkg.sha512",
+        "htmlagilitypack.nuspec",
+        "lib/Net35/HtmlAgilityPack.dll",
+        "lib/Net35/HtmlAgilityPack.pdb",
+        "lib/Net35/HtmlAgilityPack.xml",
+        "lib/Net40-client/HtmlAgilityPack.dll",
+        "lib/Net40-client/HtmlAgilityPack.pdb",
+        "lib/Net40-client/HtmlAgilityPack.xml",
+        "lib/Net40/HtmlAgilityPack.XML",
+        "lib/Net40/HtmlAgilityPack.dll",
+        "lib/Net40/HtmlAgilityPack.pdb",
+        "lib/Net45/HtmlAgilityPack.XML",
+        "lib/Net45/HtmlAgilityPack.dll",
+        "lib/Net45/HtmlAgilityPack.pdb",
+        "lib/NetCore45/HtmlAgilityPack.XML",
+        "lib/NetCore45/HtmlAgilityPack.dll",
+        "lib/NetCore45/HtmlAgilityPack.pdb",
+        "lib/netstandard1.3/HtmlAgilityPack.deps.json",
+        "lib/netstandard1.3/HtmlAgilityPack.dll",
+        "lib/netstandard1.3/HtmlAgilityPack.pdb",
+        "lib/netstandard1.3/HtmlAgilityPack.xml",
+        "lib/netstandard1.6/HtmlAgilityPack.deps.json",
+        "lib/netstandard1.6/HtmlAgilityPack.dll",
+        "lib/netstandard1.6/HtmlAgilityPack.pdb",
+        "lib/netstandard1.6/HtmlAgilityPack.xml",
+        "lib/netstandard2.0/HtmlAgilityPack.deps.json",
+        "lib/netstandard2.0/HtmlAgilityPack.dll",
+        "lib/netstandard2.0/HtmlAgilityPack.pdb",
+        "lib/netstandard2.0/HtmlAgilityPack.xml",
+        "lib/portable-net45+netcore45+wp8+MonoAndroid+MonoTouch/HtmlAgilityPack.XML",
+        "lib/portable-net45+netcore45+wp8+MonoAndroid+MonoTouch/HtmlAgilityPack.dll",
+        "lib/portable-net45+netcore45+wp8+MonoAndroid+MonoTouch/HtmlAgilityPack.pdb",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid+MonoTouch/HtmlAgilityPack.XML",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid+MonoTouch/HtmlAgilityPack.dll",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid+MonoTouch/HtmlAgilityPack.pdb",
+        "lib/uap10.0/HtmlAgilityPack.XML",
+        "lib/uap10.0/HtmlAgilityPack.dll",
+        "lib/uap10.0/HtmlAgilityPack.pdb",
+        "lib/uap10.0/HtmlAgilityPack.pri",
+        "readme.md"
+      ]
+    }
+  },
   "projectFileDependencyGroups": {
-    "net9.0": []
+    "net9.0": [
+      "HtmlAgilityPack >= 1.11.72"
+    ]
   },
   "packageFolders": {
     "/home/atsi25/.nuget/packages/": {}
@@ -13,11 +79,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/mnt/c/Users/Emma/Desktop/Code tutorials/Software engineering and programming/6-tasks-to-work-on/WebScrapping/WebScrapping.csproj",
+      "projectUniqueName": "/mnt/c/Users/Emma/Desktop/Code tutorials/Software engineering and programming/6-tasks-to-work-on/task6/WebScrapping/WebScrapping.csproj",
       "projectName": "WebScrapping",
-      "projectPath": "/mnt/c/Users/Emma/Desktop/Code tutorials/Software engineering and programming/6-tasks-to-work-on/WebScrapping/WebScrapping.csproj",
+      "projectPath": "/mnt/c/Users/Emma/Desktop/Code tutorials/Software engineering and programming/6-tasks-to-work-on/task6/WebScrapping/WebScrapping.csproj",
       "packagesPath": "/home/atsi25/.nuget/packages/",
-      "outputPath": "/mnt/c/Users/Emma/Desktop/Code tutorials/Software engineering and programming/6-tasks-to-work-on/WebScrapping/obj/",
+      "outputPath": "/mnt/c/Users/Emma/Desktop/Code tutorials/Software engineering and programming/6-tasks-to-work-on/task6/WebScrapping/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/atsi25/.nuget/NuGet/NuGet.Config"
@@ -50,6 +116,12 @@
     "frameworks": {
       "net9.0": {
         "targetAlias": "net9.0",
+        "dependencies": {
+          "HtmlAgilityPack": {
+            "target": "Package",
+            "version": "[1.11.72, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",

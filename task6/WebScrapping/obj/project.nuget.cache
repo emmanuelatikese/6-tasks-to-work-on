@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "UCL6G4svVE0=",
+  "dgSpecHash": "YdioCAXU3o0=",
   "success": true,
-  "projectFilePath": "/mnt/c/Users/Emma/Desktop/Code tutorials/Software engineering and programming/6-tasks-to-work-on/WebScrapping/WebScrapping.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/mnt/c/Users/Emma/Desktop/Code tutorials/Software engineering and programming/6-tasks-to-work-on/task6/WebScrapping/WebScrapping.csproj",
+  "expectedPackageFiles": [
+    "/home/atsi25/.nuget/packages/htmlagilitypack/1.11.72/htmlagilitypack.1.11.72.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/mnt/c/Users/Emma/Desktop/Code tutorials/Software engineering and programming/6-tasks-to-work-on/WebScrapping/WebScrapping.csproj": {}
+    "/mnt/c/Users/Emma/Desktop/Code tutorials/Software engineering and programming/6-tasks-to-work-on/task6/WebScrapping/WebScrapping.csproj": {}
   },
   "projects": {
-    "/mnt/c/Users/Emma/Desktop/Code tutorials/Software engineering and programming/6-tasks-to-work-on/WebScrapping/WebScrapping.csproj": {
+    "/mnt/c/Users/Emma/Desktop/Code tutorials/Software engineering and programming/6-tasks-to-work-on/task6/WebScrapping/WebScrapping.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/mnt/c/Users/Emma/Desktop/Code tutorials/Software engineering and programming/6-tasks-to-work-on/WebScrapping/WebScrapping.csproj",
+        "projectUniqueName": "/mnt/c/Users/Emma/Desktop/Code tutorials/Software engineering and programming/6-tasks-to-work-on/task6/WebScrapping/WebScrapping.csproj",
         "projectName": "WebScrapping",
-        "projectPath": "/mnt/c/Users/Emma/Desktop/Code tutorials/Software engineering and programming/6-tasks-to-work-on/WebScrapping/WebScrapping.csproj",
+        "projectPath": "/mnt/c/Users/Emma/Desktop/Code tutorials/Software engineering and programming/6-tasks-to-work-on/task6/WebScrapping/WebScrapping.csproj",
         "packagesPath": "/home/atsi25/.nuget/packages/",
-        "outputPath": "/mnt/c/Users/Emma/Desktop/Code tutorials/Software engineering and programming/6-tasks-to-work-on/WebScrapping/obj/",
+        "outputPath": "/mnt/c/Users/Emma/Desktop/Code tutorials/Software engineering and programming/6-tasks-to-work-on/task6/WebScrapping/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/atsi25/.nuget/NuGet/NuGet.Config"
@@ -44,6 +44,12 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
+          "dependencies": {
+            "HtmlAgilityPack": {
+              "target": "Package",
+              "version": "[1.11.72, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
